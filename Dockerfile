@@ -11,9 +11,9 @@ RUN  pip install -r requirements.txt
 
 
 #Copy function into container:
-COPY lambda-handler.py ./
+COPY lambda_function.py ./
 
 ENTRYPOINT ["python"]
 
 #setting the CMD to the lambda-handler:
-CMD  ["lambda-handler.py"]
+CMD  ["lambda_function.py"]
